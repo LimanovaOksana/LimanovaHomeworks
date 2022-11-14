@@ -102,7 +102,8 @@ double FindDifference(double[] array)
         if(array[i] > array[numMax])
             numMax = i;
     }
-    Console.WriteLine($"Max number of array: {Math.Round(array[numMax], 3)}; min number of array: {Math.Round(array[numMin], 3)}.");
+    Console.WriteLine($"Max number of array: {Math.Round(array[numMax], 3)}");
+    Console.WriteLine($"Min number of array: {Math.Round(array[numMin], 3)}");
     double diff = array[numMax] - array[numMin];
     return diff;
 }
